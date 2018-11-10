@@ -29,6 +29,7 @@ class MapViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // test trip in boston
         tripDBHelperDelegate!.saveTrip(trip: Trip(latitude: 42.3601, longitude: 71.0589))
         
         loadData()
