@@ -10,13 +10,14 @@
 		51B666786E0AD33B5E60B441 /* Pods_TriplessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68808EDAA8D47B413A862FBF /* Pods_TriplessTests.framework */; };
 		7154B07ABD1BCF8F75FA789A /* Pods_Tripless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC69889A4AF87EDB4ECBA070 /* Pods_Tripless.framework */; };
 		7E04EDD121976EEC00EA9811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDD021976EEC00EA9811 /* AppDelegate.swift */; };
-		7E04EDD321976EEC00EA9811 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDD221976EEC00EA9811 /* FirstViewController.swift */; };
-		7E04EDD521976EEC00EA9811 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDD421976EEC00EA9811 /* SecondViewController.swift */; };
+		7E04EDD321976EEC00EA9811 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDD221976EEC00EA9811 /* MapViewController.swift */; };
+		7E04EDD521976EEC00EA9811 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDD421976EEC00EA9811 /* LogViewController.swift */; };
 		7E04EDD821976EEC00EA9811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E04EDD621976EEC00EA9811 /* Main.storyboard */; };
 		7E04EDDA21976EED00EA9811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E04EDD921976EED00EA9811 /* Assets.xcassets */; };
 		7E04EDDD21976EED00EA9811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E04EDDB21976EED00EA9811 /* LaunchScreen.storyboard */; };
 		7E04EDE821976EED00EA9811 /* TriplessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDE721976EED00EA9811 /* TriplessTests.swift */; };
 		7E04EDF321976EED00EA9811 /* TriplessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDF221976EED00EA9811 /* TriplessUITests.swift */; };
+		86223022219777CD00C8DFB1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86223021219777CD00C8DFB1 /* TabBarController.swift */; };
 		8AB04F5B30D881179EF74856 /* Pods_TriplessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E5C4F04C3FABF483C04363 /* Pods_TriplessUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +44,8 @@
 		68808EDAA8D47B413A862FBF /* Pods_TriplessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriplessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04EDCD21976EEC00EA9811 /* Tripless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04EDD021976EEC00EA9811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E04EDD221976EEC00EA9811 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7E04EDD421976EEC00EA9811 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7E04EDD221976EEC00EA9811 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7E04EDD421976EEC00EA9811 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		7E04EDD721976EEC00EA9811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E04EDD921976EED00EA9811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E04EDDC21976EED00EA9811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		7E04EDEE21976EED00EA9811 /* TriplessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriplessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04EDF221976EED00EA9811 /* TriplessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriplessUITests.swift; sourceTree = "<group>"; };
 		7E04EDF421976EED00EA9811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86223021219777CD00C8DFB1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		969173D182B2777F224AE039 /* Pods-Tripless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripless.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tripless/Pods-Tripless.release.xcconfig"; sourceTree = "<group>"; };
 		99E5C4F04C3FABF483C04363 /* Pods_TriplessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriplessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B71AB50B7080E4EAF5CDE /* Pods-Tripless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripless.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tripless/Pods-Tripless.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,12 +132,13 @@
 			isa = PBXGroup;
 			children = (
 				7E04EDD021976EEC00EA9811 /* AppDelegate.swift */,
-				7E04EDD221976EEC00EA9811 /* FirstViewController.swift */,
-				7E04EDD421976EEC00EA9811 /* SecondViewController.swift */,
+				7E04EDD221976EEC00EA9811 /* MapViewController.swift */,
+				7E04EDD421976EEC00EA9811 /* LogViewController.swift */,
 				7E04EDD621976EEC00EA9811 /* Main.storyboard */,
 				7E04EDD921976EED00EA9811 /* Assets.xcassets */,
 				7E04EDDB21976EED00EA9811 /* LaunchScreen.storyboard */,
 				7E04EDDE21976EED00EA9811 /* Info.plist */,
+				86223021219777CD00C8DFB1 /* TabBarController.swift */,
 			);
 			path = Tripless;
 			sourceTree = "<group>";
@@ -371,9 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E04EDD521976EEC00EA9811 /* SecondViewController.swift in Sources */,
+				7E04EDD521976EEC00EA9811 /* LogViewController.swift in Sources */,
+				86223022219777CD00C8DFB1 /* TabBarController.swift in Sources */,
 				7E04EDD121976EEC00EA9811 /* AppDelegate.swift in Sources */,
-				7E04EDD321976EEC00EA9811 /* FirstViewController.swift in Sources */,
+				7E04EDD321976EEC00EA9811 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
