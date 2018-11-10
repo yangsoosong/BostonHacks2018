@@ -6,6 +6,7 @@ target 'Tripless' do
   use_frameworks!
 
   # Pods for Tripless
+  pod 'Alamofire', '~>4.7'
 
   target 'TriplessTests' do
     inherit! :search_paths
