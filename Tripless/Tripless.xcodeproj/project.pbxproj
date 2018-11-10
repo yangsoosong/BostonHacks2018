@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51B666786E0AD33B5E60B441 /* Pods_TriplessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68808EDAA8D47B413A862FBF /* Pods_TriplessTests.framework */; };
+		7154B07ABD1BCF8F75FA789A /* Pods_Tripless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC69889A4AF87EDB4ECBA070 /* Pods_Tripless.framework */; };
 		7E04EDD121976EEC00EA9811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDD021976EEC00EA9811 /* AppDelegate.swift */; };
 		7E04EDD321976EEC00EA9811 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDD221976EEC00EA9811 /* FirstViewController.swift */; };
 		7E04EDD521976EEC00EA9811 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDD421976EEC00EA9811 /* SecondViewController.swift */; };
@@ -15,6 +17,7 @@
 		7E04EDDD21976EED00EA9811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E04EDDB21976EED00EA9811 /* LaunchScreen.storyboard */; };
 		7E04EDE821976EED00EA9811 /* TriplessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDE721976EED00EA9811 /* TriplessTests.swift */; };
 		7E04EDF321976EED00EA9811 /* TriplessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04EDF221976EED00EA9811 /* TriplessUITests.swift */; };
+		8AB04F5B30D881179EF74856 /* Pods_TriplessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E5C4F04C3FABF483C04363 /* Pods_TriplessUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A8D820232D8E8A03C96A53E /* Pods-TriplessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriplessUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TriplessUITests/Pods-TriplessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F49BC2017F632526D8462C6 /* Pods-TriplessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriplessUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriplessUITests/Pods-TriplessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68808EDAA8D47B413A862FBF /* Pods_TriplessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriplessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04EDCD21976EEC00EA9811 /* Tripless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04EDD021976EEC00EA9811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E04EDD221976EEC00EA9811 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		7E04EDEE21976EED00EA9811 /* TriplessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriplessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04EDF221976EED00EA9811 /* TriplessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriplessUITests.swift; sourceTree = "<group>"; };
 		7E04EDF421976EED00EA9811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969173D182B2777F224AE039 /* Pods-Tripless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripless.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tripless/Pods-Tripless.release.xcconfig"; sourceTree = "<group>"; };
+		99E5C4F04C3FABF483C04363 /* Pods_TriplessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriplessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5B71AB50B7080E4EAF5CDE /* Pods-Tripless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripless.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tripless/Pods-Tripless.debug.xcconfig"; sourceTree = "<group>"; };
+		DC69889A4AF87EDB4ECBA070 /* Pods_Tripless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tripless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF83A80F24C91BCBA662FE4 /* Pods-TriplessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriplessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriplessTests/Pods-TriplessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB4AF00587144B90A88C2DA4 /* Pods-TriplessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriplessTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TriplessTests/Pods-TriplessTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7154B07ABD1BCF8F75FA789A /* Pods_Tripless.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B666786E0AD33B5E60B441 /* Pods_TriplessTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB04F5B30D881179EF74856 /* Pods_TriplessUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071B8FE1BE82131CCF1D8177 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE5B71AB50B7080E4EAF5CDE /* Pods-Tripless.debug.xcconfig */,
+				969173D182B2777F224AE039 /* Pods-Tripless.release.xcconfig */,
+				EAF83A80F24C91BCBA662FE4 /* Pods-TriplessTests.debug.xcconfig */,
+				EB4AF00587144B90A88C2DA4 /* Pods-TriplessTests.release.xcconfig */,
+				4F49BC2017F632526D8462C6 /* Pods-TriplessUITests.debug.xcconfig */,
+				1A8D820232D8E8A03C96A53E /* Pods-TriplessUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7E04EDC421976EEC00EA9811 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,8 @@
 				7E04EDE621976EED00EA9811 /* TriplessTests */,
 				7E04EDF121976EED00EA9811 /* TriplessUITests */,
 				7E04EDCE21976EEC00EA9811 /* Products */,
+				071B8FE1BE82131CCF1D8177 /* Pods */,
+				FFBAF3B1B8D62EDE8DDB29CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +158,16 @@
 			path = TriplessUITests;
 			sourceTree = "<group>";
 		};
+		FFBAF3B1B8D62EDE8DDB29CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC69889A4AF87EDB4ECBA070 /* Pods_Tripless.framework */,
+				68808EDAA8D47B413A862FBF /* Pods_TriplessTests.framework */,
+				99E5C4F04C3FABF483C04363 /* Pods_TriplessUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E04EDF721976EED00EA9811 /* Build configuration list for PBXNativeTarget "Tripless" */;
 			buildPhases = (
+				A044FD10F0C2E603A561D5A0 /* [CP] Check Pods Manifest.lock */,
 				7E04EDC921976EEC00EA9811 /* Sources */,
 				7E04EDCA21976EEC00EA9811 /* Frameworks */,
 				7E04EDCB21976EEC00EA9811 /* Resources */,
@@ -152,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E04EDFA21976EED00EA9811 /* Build configuration list for PBXNativeTarget "TriplessTests" */;
 			buildPhases = (
+				7FAF208BF9E09499A0CD3F1C /* [CP] Check Pods Manifest.lock */,
 				7E04EDDF21976EED00EA9811 /* Sources */,
 				7E04EDE021976EED00EA9811 /* Frameworks */,
 				7E04EDE121976EED00EA9811 /* Resources */,
@@ -170,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E04EDFD21976EED00EA9811 /* Build configuration list for PBXNativeTarget "TriplessUITests" */;
 			buildPhases = (
+				819B65247BC43429650EF4BD /* [CP] Check Pods Manifest.lock */,
 				7E04EDEA21976EED00EA9811 /* Sources */,
 				7E04EDEB21976EED00EA9811 /* Frameworks */,
 				7E04EDEC21976EED00EA9811 /* Resources */,
@@ -253,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FAF208BF9E09499A0CD3F1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TriplessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819B65247BC43429650EF4BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TriplessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A044FD10F0C2E603A561D5A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tripless-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E04EDC921976EEC00EA9811 /* Sources */ = {
@@ -434,6 +546,7 @@
 		};
 		7E04EDF821976EED00EA9811 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5B71AB50B7080E4EAF5CDE /* Pods-Tripless.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +565,7 @@
 		};
 		7E04EDF921976EED00EA9811 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969173D182B2777F224AE039 /* Pods-Tripless.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +584,7 @@
 		};
 		7E04EDFB21976EED00EA9811 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF83A80F24C91BCBA662FE4 /* Pods-TriplessTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +605,7 @@
 		};
 		7E04EDFC21976EED00EA9811 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB4AF00587144B90A88C2DA4 /* Pods-TriplessTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +626,7 @@
 		};
 		7E04EDFE21976EED00EA9811 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F49BC2017F632526D8462C6 /* Pods-TriplessUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +646,7 @@
 		};
 		7E04EDFF21976EED00EA9811 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8D820232D8E8A03C96A53E /* Pods-TriplessUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
