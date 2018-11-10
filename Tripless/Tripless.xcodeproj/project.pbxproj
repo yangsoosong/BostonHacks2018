@@ -21,6 +21,7 @@
 		8622302521977FD100C8DFB1 /* TripModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8622302321977FD100C8DFB1 /* TripModel.xcdatamodeld */; };
 		862230272197805B00C8DFB1 /* TripDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862230262197805B00C8DFB1 /* TripDBHelper.swift */; };
 		8622302B219783FB00C8DFB1 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8622302A219783FB00C8DFB1 /* Trip.swift */; };
+		8622302D219795B200C8DFB1 /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8622302C219795B200C8DFB1 /* LogCell.swift */; };
 		8AB04F5B30D881179EF74856 /* Pods_TriplessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E5C4F04C3FABF483C04363 /* Pods_TriplessUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		8622302421977FD100C8DFB1 /* TripModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripModel.xcdatamodel; sourceTree = "<group>"; };
 		862230262197805B00C8DFB1 /* TripDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDBHelper.swift; sourceTree = "<group>"; };
 		8622302A219783FB00C8DFB1 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		8622302C219795B200C8DFB1 /* LogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
 		969173D182B2777F224AE039 /* Pods-Tripless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripless.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tripless/Pods-Tripless.release.xcconfig"; sourceTree = "<group>"; };
 		99E5C4F04C3FABF483C04363 /* Pods_TriplessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriplessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B71AB50B7080E4EAF5CDE /* Pods-Tripless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripless.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tripless/Pods-Tripless.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				86223021219777CD00C8DFB1 /* TabBarController.swift */,
 				862230262197805B00C8DFB1 /* TripDBHelper.swift */,
 				8622302A219783FB00C8DFB1 /* Trip.swift */,
+				8622302C219795B200C8DFB1 /* LogCell.swift */,
 			);
 			path = Tripless;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			files = (
 				862230272197805B00C8DFB1 /* TripDBHelper.swift in Sources */,
 				7E04EDD521976EEC00EA9811 /* LogViewController.swift in Sources */,
+				8622302D219795B200C8DFB1 /* LogCell.swift in Sources */,
 				8622302521977FD100C8DFB1 /* TripModel.xcdatamodeld in Sources */,
 				86223022219777CD00C8DFB1 /* TabBarController.swift in Sources */,
 				7E04EDD121976EEC00EA9811 /* AppDelegate.swift in Sources */,
