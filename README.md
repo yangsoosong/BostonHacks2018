@@ -35,3 +35,9 @@ Server side : Yangsoo - Database that stores everything
             * location (lat, long)
             * userID
             
+## Installation
+Clone the project
+```bash
+$ pod install
+```
+open `Tripless.xcworkspace`
