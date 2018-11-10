@@ -9,37 +9,31 @@
 import Foundation
 import UIKit
 
-class TripDBHelper
-{
+class TripDBHelper {
     private var tripData: [TripData] = []
     private weak var appDelegate: AppDelegate!
     
-    init(appDelegate: AppDelegate)
-    {
+    init(appDelegate: AppDelegate) {
         self.appDelegate = appDelegate
         reloadData()
     }
     
-    func getAllTripData() -> [TripData]
-    {
+    func getAllTripData() -> [TripData] {
         return tripData
     }
     
-    func getTripData(at index: Int) -> TripData
-    {
+    func getTripData(at index: Int) -> TripData {
         return tripData[index]
     }
     
-    func removeTrip(trip: TripData)
-    {
+    func removeTrip(trip: TripData) {
         appDelegate.persistentContainer.viewContext.delete(trip)
         appDelegate.saveContext()
         
         reloadData()
     }
     
-    func saveTrip(trip: Trip)
-    {
+    func saveTrip(trip: Trip) {
         let tripData = TripData(context: appDelegate.persistentContainer.viewContext)
         tripData.lat = trip.latitude
         tripData.long = trip.longitude
@@ -51,14 +45,11 @@ class TripDBHelper
         reloadData()
     }
     
-    private func reloadData()
-    {
-        do
-        {
+    private func reloadData() {
+        do {
             tripData = try appDelegate.persistentContainer.viewContext.fetch(TripData.fetchRequest())
         }
-        catch
-        {
+        catch {
             print("Fetching Fialed")
         }
     }

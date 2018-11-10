@@ -9,6 +9,7 @@
 import UIKit
 
 class LogViewController: UIViewController {
+    weak var tripDBHelperDelegate: TripDBHelper?
 
     override func viewDidLoad() {
         super.viewDidLoad()

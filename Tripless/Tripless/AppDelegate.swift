@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Core Data stack
     lazy var persistentContainer: NSPersistentContainer =
-        {
+    {
             let container = NSPersistentContainer(name: "TripModel")
             container.loadPersistentStores(completionHandler: { (_, error) in
                 if let error = error as NSError? {
@@ -55,13 +55,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
     
     // MARK: - Core Data Saving support
-    func saveContext ()
-    {
+    func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
                 try context.save()
-            } catch {
+            }
+            catch {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
