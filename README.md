@@ -6,7 +6,7 @@ Our desired track for this year's BostonHakcs is
 Data for Urban Good
 Your hometown works every day to improve the quality of life for its residents. Help out your local city/town by utilizing their robust datasets and collecting insights for urban improvements.
 
-##Tripless
+## Tripless
 Building app for users to record "Trip" spots on our map to indicate the not-so walkable area in the city.
 We are going to use Swift for our project as we are developing iOS app for iPhone.
 
