@@ -12,9 +12,10 @@ import UIKit
 class LogCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     
-    var logData: (label: String, _: Any)? {
+    var logData: String = "-1" {
         didSet {
-            label.text = logData?.label
+            self.label.text = logData
         }
     }
+    
 }

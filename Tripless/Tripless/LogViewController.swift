@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
 class LogViewController: UIViewController {
     weak var tripDBHelperDelegate: TripDBHelper?
-    @IBOutlet weak var collectionView: UICollectionView!
     fileprivate let reuseIdentifier = "cell"
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 0.0, bottom: 20.0, right: 0.0)
     fileprivate let itemsPerRow: CGFloat = 1
     fileprivate var tripData: [TripData] = []
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +86,8 @@ extension LogViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? LogCell ?? LogCell()
         let trip = tripData[tripData.count - (indexPath.item + 1)]
-        cell.logData = ("(\(trip.lat), \(trip.long))", "")
+        
+        cell.logData = "(\(trip.lat), \(trip.long))"
         
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(deleteCell))
         swipeGesture.direction = UISwipeGestureRecognizer.Direction.right
@@ -122,6 +124,14 @@ extension LogViewController: UICollectionViewDelegateFlowLayout {
         -> CGFloat
     {
         return 5.0
+    }
+}
+
+// MARK: - UICollectionViewDelegate
+extension LogViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // handle tap events
+        print("You selected cell #\(indexPath.item)!")
     }
 }
 

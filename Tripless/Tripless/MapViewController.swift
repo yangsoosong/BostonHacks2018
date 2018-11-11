@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import UserNotifications
 
 class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
@@ -24,19 +25,38 @@ class MapViewController: UIViewController {
         mapView.showsUserLocation = true
         
         centerToCurrentLocation()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler:
+        { didAllow, error in
+        })
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // test trip in boston
-        tripDBHelperDelegate!.saveTrip(trip: Trip(latitude: 42.3601, longitude: 71.0589))
-        
         loadData()
+        
+        //creating the notification content
+        let content = UNMutableNotificationContent()
+        
+        //adding title, subtitle, body and badge
+        content.title = "Hey this is Simplified iOS"
+        content.subtitle = "iOS Development is fun"
+        content.body = "We are learning about iOS Local Notification"
+        content.badge = 1
+        
+        //getting the notification trigger
+        //it will be called after 5 seconds
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        
+        //getting the notification request
+        let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification1", content: content, trigger: trigger)
+        
+        //adding the notification to notification center
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
-    private func loadData()
-    {
+    private func loadData() {
         let tripData = tripDBHelperDelegate!.getAllTripData()
         mapView.addAnnotations(tripData.map
             { trip in
@@ -46,10 +66,10 @@ class MapViewController: UIViewController {
                 
                 return pointAnnotation
         })
+        
     }
     
-    private func centerToCurrentLocation()
-    {
+    private func centerToCurrentLocation() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             locationManager.startUpdatingLocation()
         } else {
@@ -59,11 +79,19 @@ class MapViewController: UIViewController {
 
 }
 
+extension MapViewController: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        print("tapped?")
+        
+        //displaying the ios local notification when app is in foreground
+        completionHandler([.alert, .badge, .sound])
+    }
+}
+
 // MARK: - CLLocationManagerDelegate
-extension MapViewController: CLLocationManagerDelegate
-{
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
-    {
+extension MapViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
         mapView.setRegion(coordinateRegion, animated: true)
